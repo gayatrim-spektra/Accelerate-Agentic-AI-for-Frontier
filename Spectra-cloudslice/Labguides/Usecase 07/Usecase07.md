@@ -1,4 +1,4 @@
-# Use case 7 - Centralized AI agent governance and observability using Foundry Control Plane
+# Usecase 7 - Centralized AI agent governance and observability using Foundry Control Plane
 
 ## Introduction
 
@@ -44,31 +44,31 @@ This task introduces you to the process of setting up your Microsoft Foundry pro
 
 Follow the steps below to complete the setup of your Microsoft Foundry project.
 
-1. Open a browser tab and copy and paste this link https://ai.azure.com/templates.If prompted to sign in, kindly sign in.
+1. Open a browser tab and copy and paste this link https://ai.azure.com/templates. If prompted to sign in, kindly sign in.
 
-2. Click **Start building** in Microsoft Foundry to begin creating your AI solution
+1. Click **Start building** in Microsoft Foundry to begin creating your AI solution
 
      ![](./media/us11.1.png)
 
       > Note :(Alternatively) switch toggle to "New Foundry"
 
-3. You should see a dialog prompting you to select a project to continue
+1. You should see a dialog prompting you to select a project to continue
 
-4. Click the input area - you will see the ***Create a new project*** option and select it
+1. Click the input area - you will see the ***Create a new project*** option and select it
 
      ![](./media/us12.1.png)
 
-5. Enter a unique project name i.e
-    - **Contoso-Travel-<inject key="DeploymentID" enableCopy="false"/> (1)**
+1. Enter a unique project name as **Contoso-Travel-<inject key="DeploymentID" enableCopy="false"/> (1)**
+
     - Select the default **subscription (2)**
     - Resource group: **Agentic AI (3)**
     - Click **Create (4)** to set up your Microsoft Foundry project.
 
        ![](./media/us13.png)
 
-6. The project creation process may take a few minutes to complete.
+1. The project creation process may take a few minutes to complete.
    
-7. You should now see your Foundry project landing page. **Take note of the Project Endpoint information shown here** - we will use it later.
+1. You should now see your Foundry project landing page. **Take note of the Project Endpoint information shown here** - we will use it later.
 
      ![](./media/us14.1.png)
 
@@ -80,15 +80,25 @@ In this task, you will create your first AI agent within the Foundry environment
 
     ![](./media/us15.png)
 
-2. Enter the Agent name as **contoso-travel-portal (1)** and click on **Create (2)** to create the Agent.
+1. Enter the Agent name as **contoso-travel-portal (1)** and click on **Create (2)** to create the Agent.
 
     ![](./media/us16.png)
 
-3. This takes a few minutes to complete
+1. This takes a few minutes to complete
 
-4. The agent is now ready to test in playground
+1. The agent is now ready to test in playground
 
      ![](./media/us17.1.png)
+
+   ### Congratulations!
+
+   You’ve completed the task. Now let’s validate it:
+     
+   - Hit the **Validate** button for the corresponding task.
+   - If successful, proceed to the next task.
+   - If not, retry using the lab guide.
+   - Need help? cloudlabs-support@spektrasystems.com
+   <validation step="99a311b7-2116-4e01-a52a-865355b2ffef" />     
 
 ### Task 3: Create Application Insights
 
@@ -102,12 +112,11 @@ real-time and identifying potential issues.
 
     ![](./media/us18.png)
 
-2. To Create App Insights  under Application insinghts resource: **Create new resource(1)**, accept the default
-    values in the other fields and click on **Create (2)**.
+1. To Create App Insights  under Application insinghts resource: **Create new resource(1)**, accept the default values in the other fields and click on **Create (2)**.
 
     ![](./media/us19.png)
 
-3. App Insights has been created.
+1. App Insights has been created.
 
      ![](./media/us20.png)
 
@@ -123,7 +132,7 @@ while adhering to its intended role
 
     ![](./media/us21.png)
 
-2. In the Playground tab, update the Instructions (1) section with your  agent prompt, and click on **Save (2)**
+1. In the Playground tab, update the Instructions (1) section with your  agent prompt, and click on **Save (2)**
 
     ```
     You are the Contoso Travel Concierge, a friendly and knowledgeable
@@ -172,7 +181,7 @@ while adhering to its intended role
 
      ![](./media/us22.png)
 
-4. Enter the below in the chat panel and select **Send**
+1. Enter the below in the chat panel and select **Send**
    
     ```
     Hi. I'm thinking about planning a trip to Paris. What should I know? 
@@ -180,15 +189,15 @@ while adhering to its intended role
  
     ![](./media/us23.1.png)
 
-5. Observe the response.
+1. Observe the response.
 
     ![](./media/us24.1.png)
 
-6. Click on the **Metrics** link above the response panel - it shows  you available evaluators.
+1. Click on the **Metrics** link above the response panel - it shows  you available evaluators.
 
     ![](./media/us25.1.png)
 
-7. Customize the list to reflect evaluation criteria you want to use and try a new request.
+1. Customize the list to reflect evaluation criteria you want to use and try a new request.
 
      ```
      Hi. I'm thinking about planning a trip to Paris. What should I know? 
@@ -196,17 +205,17 @@ while adhering to its intended role
 
      ![](./media/us26.1.png)
 
-8. Observe the *AI Quality* and *Safety* metrics in the line below the response.
+1. Observe the *AI Quality* and *Safety* metrics in the line below the response.
 
-9. Hover over each number - you should see the custom metrics used and their Pass/Fail status
+1. Hover over each number - you should see the custom metrics used and their Pass/Fail status
 
     ![](./media/us27.png)
 
-10. Select **Configuration**
+1. Select **Configuration**
 
     ![](./media/us28.png)
 
-11. Enter the details
+1. Enter the details
 
     - **Display name (1)**: Contoso Travel Assistant
     - **Description (2)**
@@ -236,7 +245,7 @@ while adhering to its intended role
 
        ![](./media/us29.png)
 
-12. In the Test pane, enter the below and click **Send.**
+1. In the Test pane, enter the below and click **Send.**
 
      ```
      I want to plan a multi-day travel itinerary 
@@ -244,11 +253,11 @@ while adhering to its intended role
 
      ![](./media/us30.png)
 
-13. View the response. The agent will prompt you for additional information as instructed.
+1. View the response. The agent will prompt you for additional information as instructed.
 
      ![](./media/us31.png)
 
-14. Enter the following text and click on the **Submit icon** as shown in the below image.
+1. Enter the following text and click on the **Submit icon** as shown in the below image.
 
       ```
       Hi! I'm thinking about planning a trip to Paris from Jul 1–4 with my family (3 people total). We are vegetarian. We love sports, historic homes, art and food tours
@@ -256,19 +265,19 @@ while adhering to its intended role
 
       ![](./media/us32.png)
 
-15. Note how the agent remembers and uses context from the history.
+1. Note how the agent remembers and uses context from the history.
 
      ![](./media/us33.1.png)
 
-16. Click the **Traces** tab - you should see rows for each conversation run
+1. Click the **Traces** tab - you should see rows for each conversation run
 
      ![](./media/us34.1.png)
 
-17. Want to understand what the Trace ID is showing - try **Ask AI** and enter the below prompt and click on **Send**
+1. Want to understand what the Trace ID is showing - try **Ask AI** and enter the below prompt and click on **Send**
 
      ```
      Explain what the trace ID is showing     
-    ```
+     ```
  
      ![](./media/us35.png)
 
@@ -276,35 +285,31 @@ while adhering to its intended role
 
      ![](./media/us37.png)
 
-18. Click on the Trace ID - you should see something like this:
+1. Click on the Trace ID - you should see something like this:
 
-    ![](./media/us38.png)
+     ![](./media/us38.png)
 
-    ![](./media/us39.png)
+     ![](./media/us39.png)
 
-19. Click **Preview (1)**, then select **Preview agent (2)** to test your agent in a sample application interface.
+1. Click **Preview (1)**, then select **Preview agent (2)** to test your agent in a sample application interface.
 
-    ![](./media/us40.png)
+     ![](./media/us40.png)
 
-    ![](./media/us41.png)
+     ![](./media/us41.png)
 
-20. Enter the following text and click on the **Submit icon** as shown in the below image.
+1. Enter the following text and click on the **Submit icon** as shown in the below image.
 
-    ```
-    I want to plan a multi-day travel itinerary leaving JFK on Jul 1 for
-    Paris and returning Jul 5. I am traveling with my family (3 people
-    total). We are vegetarians. We love sports, historic homes and art and
-    food tours. Plan my itinerary and show me hotels and flights for my
-    stay           
-    ```
+     ```
+     I want to plan a multi-day travel itinerary leaving JFK on Jul 1 for Paris and returning Jul 5. I am traveling with my family (3 people total). We are vegetarians. We love sports, historic homes and art and food tours. Plan my itinerary and show me hotels and flights for my stay           
+     ```
 
      ![](./media/us42.png)
 
-21. You can review the agent response in the preview tab itself
+1. You can review the agent response in the preview tab itself
 
     ![](./media/us43.png)
 
-22. Note that if you return to agent you can now see this interaction captured in the traces as well.
+1. Note that if you return to agent you can now see this interaction captured in the traces as well.
 
     ![](./media/us44.png)
 
@@ -325,17 +330,17 @@ also invoke *code-first*.
 
     ![](./media/us45.png)
 
-2. Select the **Evaluators catalog** to see the full list of supported evaluators
+1. Select the **Evaluators catalog** to see the full list of supported evaluators
 
      ![](./media/us46.png)
 
-3. Filter to see evaluators for a particular category - e.g., agents
+1. Filter to see evaluators for a particular category - e.g., agents
 
     ![](./media/us47.png)
 
     ![](./media/us48.png)
 
-4. Use "Ask AI" to get explanations for any of them - e.g., ask:
+1. Use "Ask AI" to get explanations for any of them - e.g., ask:
 
     ```
     Tell me more about the Protected-Material evaluator        
@@ -343,11 +348,11 @@ also invoke *code-first*.
 
     ![](./media/us49.png)
 
-5. Click the **Create** button.
+1. Click the **Create** button.
 
     ![](./media/us50.png)
 
-6. Give the following details:
+1. Give the following details:
 
    - Workflow name as **customevaluator (1)**
    - Category: **Agents (2)**
@@ -369,15 +374,15 @@ behaves responsibly under different conditions.
 
     ![](./media/us53.png)
 
-2. For now, select the **Model (1)** option and pick the default model used  in your agent e.g, gpt-4.1(2) and click **Next (3)**
+1. For now, select the **Model (1)** option and pick the default model used  in your agent e.g, gpt-4.1(2) and click **Next (3)**
 
     ![](./media/us54.png)
 
-3. Click on Next
+1. Click on Next
 
     ![](./media/us55.png)
 
-4. Submit the scan. This takes a while to complete - we will revisit it
+1. Submit the scan. This takes a while to complete - we will revisit it
     later.
 
     ![](./media/us56.png)
@@ -436,6 +441,7 @@ Codespace, and prepare your workspace for development.
     ```
     ./labs/notebooks/setup-env.sh         
     ```
+
      ![](./media/usx6.png)
 
 1. It should prompt you to log into Azure as shown. Complete this step, then let the script run till complete. 
@@ -488,7 +494,7 @@ and the Foundry project.
 
     ![](./media/usx17.png)
 
-1.  To install dependencies, run the first cell in the notebook
+1. To install dependencies, run the first cell in the notebook
 
    ![](./media/usx18.png)
 
@@ -533,32 +539,31 @@ Foundry SDK. You will initialize the required clients, create the agent,
 and interact with it through conversations to observe its behavior and
 responses.
 
-1. Navigate to the **labs/notebooks/1-prompt-agents/lab** folder and  open the **lab-02-agent.ipynb** notebook to begin the environment
-    setup lab.
+1. Navigate to the **labs/notebooks/1-prompt-agents/lab** folder and  open the **lab-02-agent.ipynb** notebook to begin the environment setup lab.
 
-   ![](./media/usx31.png)
+    ![](./media/usx31.png)
 
 1. Click **Select Kernel**, then choose the **Python 3.12.13**  environment to run the Lab 02 notebook.
 
-   ![](./media/usx32.png)
+    ![](./media/usx32.png)
 
 1. Load the environment variables and create the Azure AI Project  client by running the first cell in the notebook.
 
-    ![](./media/usx33.png)
+     ![](./media/usx33.png)
 
-    ![](./media/usx34.png)
+     ![](./media/usx34.png)
 
 1. To create the Concierge Agent, run the second cell in the notebook.
 
-    ![](./media/usx35.png)
+     ![](./media/usx35.png)
 
-    ![](./media/usx36.png)
+     ![](./media/usx36.png)
 
 1. Run the cell under **Start a Conversation** to create a conversation and send your first query to the agent.
 
-   ![](./media/usx37.png)
+    ![](./media/usx37.png)
 
-   ![](./media/usx38.png)
+    ![](./media/usx38.png)
 
 1. Run the cell under **Multi-Turn Conversation** to send a follow-up query and observe how the agent maintains context across interactions.
 
@@ -583,61 +588,59 @@ allow it to retrieve and process structured data. This enables the agent
 to handle more complex queries and provide more accurate and dynamic
 responses.
 
-1. Navigate to the **labs/notebooks/1-prompt-agents/lab** folder and  open the **lab-03a-tools.ipynb** notebook to begin the environment
-    setup lab.
+1. Navigate to the **labs/notebooks/1-prompt-agents/lab** folder and  open the **lab-03a-tools.ipynb** notebook to begin the environment setup lab.
 
-   ![](./media/usx44.png)
+    ![](./media/usx44.png)
 
 1. Click **Select Kernel**, then choose the **Python 3.12.13**  environment to run the Lab 02 notebook.
 
-   ![](./media/usx45.png)
+    ![](./media/usx45.png)
 
 1. Load the environment variables and create the Azure AI Project client by running the first cell in the notebook.
 
-   ![](./media/usx46.png)
+    ![](./media/usx46.png)
 
 1. Run the cell under **Load the Travel Data** to load the CSV files into DataFrames and verify the data is successfully loaded.
 
-   ![](./media/usx47.png)
+    ![](./media/usx47.png)
 
 1. Run the cell under **Define Tool Functions** to create the functions that query travel data and return results in JSON format.
 
-   ![](./media/usx48.png)
+    ![](./media/usx48.png)
 
-   ![](./media/usx49.png)
+    ![](./media/usx49.png)
 
 1. Run the cell under **Register Function Tools** to define and register the tool schemas that the agent will use to call functions.
 
-    ![](./media/usx50.png)
+     ![](./media/usx50.png)
 
-    ![](./media/usx51.png)
+     ![](./media/usx51.png)
 
 1. Run the cell under **Create the Enhanced Travel Agent** to define the agent instructions and create an agent with the registered function tools attached.
 
-    ![](./media/usx52.png)
+     ![](./media/usx52.png)
 
-    ![](./media/usx53.png)
+     ![](./media/usx53.png)
 
 1. Run the cell under **Test: Flight Search** to test the agent’s ability to call the **search_flights** tool and return relevantresults.
 
-   ![](./media/usx54.png)
+     ![](./media/usx54.png)
 
-   ![](./media/usx55.png)
+     ![](./media/usx55.png)
 
 1. Run the cell under **Handle Function Call Responses** to execute the tool call, send the results back to the agent, and generate the final response.
 
-   ![](./media/usx56.png)
+     ![](./media/usx56.png)
 
-1. Run the cell under **Test: Hotel + Car Combo** to test a multi-step query where the agent calls multiple tools sequentially to provide
-    combined results.
+1. Run the cell under **Test: Hotel + Car Combo** to test a multi-step query where the agent calls multiple tools sequentially to provide combined results.
 
-    ![](./media/usx57.png)
+     ![](./media/usx57.png)
 
-    ![](./media/usx58.png)
+     ![](./media/usx58.png)
 
 1. Run the final cell to delete the conversation and agent resources.
 
-    ![](./media/usx59.png)
+     ![](./media/usx59.png)
 
 ### Task 5: Build a Multi-Agent Travel Workflow
 
@@ -648,50 +651,49 @@ complete travel planning experience.
 
 1. Navigate to the **labs/notebooks/1-prompt-agents/lab** folder and open the **lab-03b-workflow.ipynb** notebook to begin the environment setup lab.
 
-   ![](./media/usx60.png)
+    ![](./media/usx60.png)
 
 1. Click **Select Kernel**, then choose the **Python 3.12.13** environment to run the Lab 02 notebook.
 
-   ![](./media/usx61.png)
+    ![](./media/usx61.png)
 
 1. Run the first cell to import required libraries and initialize the environment for workflow orchestration.
 
-   ![](./media/usx62.png)
+    ![](./media/usx62.png)
 
 1. Run the cell under **Create Specialist Agents** to create multiple domain-specific agents (flight, hotel, and car) along with a concierge agent that combines their results.
 
-   ![](./media/usx63.png)
+    ![](./media/usx63.png)
 
-   ![](./media/usx64.png)
+    ![](./media/usx64.png)
 
 1. Run the cell under **Define the Workflow YAML** to create the YAML-based workflow that orchestrates interactions between the specialist agents and the concierge agent.
 
-   ![](./media/usx65.png)
+    ![](./media/usx65.png)
 
-   ![](./media/usx66.png)
+    ![](./media/usx66.png)
 
 1. Run the cell under **Create the Workflow Agent** to register the workflow in Microsoft Foundry and create the workflow agent.
 
-   ![](./media/usx67.png)
+    ![](./media/usx67.png)
 
-1. Run the cell under **Test: End-to-End Trip Planning** to execute the workflow and observe how it orchestrates multiple agents to generate
-    a complete travel plan.
+1. Run the cell under **Test: End-to-End Trip Planning** to execute the workflow and observe how it orchestrates multiple agents to generate a complete travel plan.
 
-   ![](./media/usx68.png)
+    ![](./media/usx68.png)
 
-   ![](./media/usx69.png)
+    ![](./media/usx69.png)
 
 1. Run the cell under **Retrieve & Combine Agent Responses** to fetch the outputs from each specialist agent and combine them into a Unified response.
 
-   ![](./media/usx70.png)
+    ![](./media/usx70.png)
 
-   ![](./media/usx71.png)
+    ![](./media/usx71.png)
 
 1. Run the final cell to delete the conversation and agent resources.
 
-   ![](./media/usx72.png)
+    ![](./media/usx72.png)
 
-   ![](./media/usx73.png)
+    ![](./media/usx73.png)
 
 ### Task 6: Trace Your Travel Agent
 
@@ -728,19 +730,17 @@ requests.
 
 1. Run the cell under **Run a Traced Travel Query** to check the console output below — OpenTelemetry spans appear for each operation.
 
-   ![](./media/usx81.png)
+    ![](./media/usx81.png)
 
-   ![](./media/usx82.png)
+    ![](./media/usx82.png)
 
-1. Run the cell under **Configure Azure Monitor Tracing** to enable Application Insights integration and send traces to Azure Monitor
-    for observability.
+1. Run the cell under **Configure Azure Monitor Tracing** to enable Application Insights integration and send traces to Azure Monitor for observability.
 
     ![](./media/usx83.png)
 
     ![](./media/usx84.png)
 
-1. Run the cell under **Run a Traced Travel Query (Azure Monitor)** to execute a query and generate traces that can be viewed in Azure
-    Monitor.
+1. Run the cell under **Run a Traced Travel Query (Azure Monitor)** to execute a query and generate traces that can be viewed in Azure Monitor.
 
     ![](./media/usx85.png)
 
@@ -823,8 +823,7 @@ identify areas for improvement.
 
     ![](./media/usx106png)
 
-1. Run the cell under **Define Safety Evaluators** to configure safety checks such as violence, hate, and self-harm detection for agent
-    responses.
+1. Run the cell under **Define Safety Evaluators** to configure safety checks such as violence, hate, and self-harm detection for agent responses.
 
     ![](./media/usx107.png)
 
