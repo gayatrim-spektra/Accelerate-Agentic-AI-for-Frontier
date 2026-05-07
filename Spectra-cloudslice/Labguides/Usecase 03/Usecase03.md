@@ -219,10 +219,7 @@ incorrect.](./media/image21.png)
 
 ## Task 5: Verify deployed resources in the Azure portal
 
-1. Open a browser go to **** and sign in with your cloud slice
-    account below.
-
-1. Select **Resource groups**
+1. Navigate to **Azure protal** and select **Resource groups**
 
     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image45.png)
@@ -272,6 +269,16 @@ incorrect.](./media/image45.png)
     ![](./media/image52.png)
 
     ![](./media/image53.png)
+
+   ### Congratulations!
+
+   You’ve completed the task. Now let’s validate it:
+     
+   - Hit the **Validate** button for the corresponding task.
+   - If successful, proceed to the next task.
+   - If not, retry using the lab guide.
+   - Need help? cloudlabs-support@spektrasystems.com
+   <validation step="ae6ae3fc-c6f0-4b97-a951-0a96aa365c0e" />
 
 ## Task 6: Add Authentication in Azure App Service configuration
 
