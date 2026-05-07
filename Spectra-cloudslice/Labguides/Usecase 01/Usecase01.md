@@ -215,6 +215,16 @@ document and required Role permissions to it.
 
    ![image](./media/uc1-39.png)       
 
+   ### Congratulations!
+
+   You’ve completed the task. Now let’s validate it:
+     
+   - Hit the **Validate** button for the corresponding task.
+   - If successful, proceed to the next task.
+   - If not, retry using the lab guide.
+   - Need help? cloudlabs-support@spektrasystems.com
+   <validation step="84aae3c9-71f4-401e-a136-f446d2da1749" />
+
 ## Exercise 4: Create a vector index
 
 1. Back in the Azure portal, open the **searchleaves-<inject key="DeploymentID" enableCopy="false"/>** AI Search service resource.
@@ -261,6 +271,16 @@ document and required Role permissions to it.
 1. Once the setup is complete, click **Close** to view and test your indexed data.
 
    ![image](./media/uc1-48.png)       
+
+   ### Congratulations!
+
+   You’ve completed the task. Now let’s validate it:
+     
+   - Hit the **Validate** button for the corresponding task.
+   - If successful, proceed to the next task.
+   - If not, retry using the lab guide.
+   - Need help? cloudlabs-support@spektrasystems.com
+   <validation step="77d3c91e-95a7-41d5-a2dc-5ee605b4ef21" />
 
 ## Exercise 5: Create a knowledge assistant agent
 
