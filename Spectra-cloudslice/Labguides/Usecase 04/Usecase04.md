@@ -5,7 +5,7 @@
 This use case focuses on building an intelligent **customer resolution
 agent** for Contoso Electronics by integrating multiple Microsoft AI
 capabilities, including Azure AI Search, Microsoft Fabric, and Microsoft
-Foundry.
+Foundry
 
 The solution simulates a real-world operations and support environment
 where customer issues such as shipment delays, refunds, and escalations
