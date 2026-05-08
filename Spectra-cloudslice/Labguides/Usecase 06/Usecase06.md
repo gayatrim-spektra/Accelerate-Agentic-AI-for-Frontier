@@ -45,40 +45,7 @@ By implementing this use case, you will:
 - Deliver a **scalable and user-friendly conversational banking
   experience**
 
-## Task 0: Understand the VM and the credentials
 
-In this task, we will identify and understand the credentials that we
-will be using throughout the lab.
-
-1.  **Instructions** tab hold the lab guide with the instructions to be
-    followed throughout the lab.
-
-2.  **Resources** tab has got the credentials that will be needed for
-    executing the lab.
-
-    - **URL** – URL to the Azure portal
-
-    - **Subscription** – This is the ID of the subscription assigned to
-      you
-
-    - **Username** – The user id with which you need to login to the
-      Azure services.
-
-    - **Password** – Password to the Azure login. Let us call this
-      Username and password as Azure login credentials. We will use
-      these creds wherever we mention Azure login credentials.
-
-    - **Resource Group** – The **Resource group** assigned to you.
-
-      ![](./media/image1.png)
-
-3.  **Help** tab holds the Support information. The **ID** value here is
-    the **Lab instance ID** which will be used during the lab execution.
-
-     ![](./media/image2.png)
-
-\[!Alert\] **Important:** Make sure you create all your resources under
-this Resource group
 
 ## Task 1: Register Service provider
 
@@ -121,7 +88,7 @@ incorrect.](./media/135.png)
 1.  Open your browser, navigate to the address bar, type or paste the
     following URL: 
 
-    https://github.com/technofocus-pte/Banking-assistant-Agent+
+    https://github.com/technofocus-pte/Banking-assistant-Agent
 
      ![](./media/image13.png)
 

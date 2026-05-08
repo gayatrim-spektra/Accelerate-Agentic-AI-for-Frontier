@@ -54,7 +54,7 @@ The main objectives of this use case are:
 
 ## Generate Email samples
 
-- Send email samples (**C:\LabFiles\LabFiles\Usecase 6\\**WorkIQ
+- Send email samples ( **C:\LabFiles\LabFiles\Usecase 6\\** WorkIQ
   Labfiles) from mail id of your choice to your tenant id.
 
     ![](./media/image1.png)
@@ -85,7 +85,7 @@ select **Microsoft Foundry** under Services.
    ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image2.png)
 
-2.  In the **AI Foundry page**, select **AI Search** under **Use with AI Foundry** from the left pane and then select **+ Create**.
+2.  In the **AI Foundry page**, select **AI Search** under **Use with Foundry** from the left pane and then select **+ Create**.
 
     ![](./media/image3.png)
 
@@ -167,7 +167,7 @@ incorrect.](./media/112.png)
 
     ![](./media/124.png)
 
-6.  Select **Containers** under **Data storage**. Select **+ Container**, enter the name as **document** and click on **Create** to create the container.
+6.  Select **Containers** under **Data storage**. Select **+ Add Container**, enter the name as **document** and click on **Create** to create the container.
 
      ![](./media/image18.png)
 
@@ -181,7 +181,7 @@ incorrect.](./media/112.png)
 
      ![](./media/image21.png)
 
-9.  Select the **all documents** from **C:\Labfiles\LabFiles\Usecase4\Foundry** and then click on **Upload**.
+9.  Select the **all documents** from **C:\Labfiles\lab file\Usecase4\Foundry** and then click on **Upload**.
 
      ![](./media/image22.png)
 
@@ -189,7 +189,7 @@ incorrect.](./media/112.png)
 
      ![](./media/image24.png)
 
-10. Navigate to the **iqlab<inject key="DeploymentID" enableCopy="false"/>** Storage account (Select **Storageaccounts** from the **Home page** of the Azure portal and select  and select **Access Control (IAM)** from the left pane. Select **Add -\> Add role assignment**).
+10. Navigate to the **iqlab<inject key="DeploymentID" enableCopy="false"/>** Storage account (Select **Storageaccounts** from the **Home page** of the Azure portal and select **Access Control (IAM)** from the left pane. Select **Add -\> Add role assignment**).
 
      ![](./media/image25.png)
 
@@ -225,7 +225,7 @@ access the Microsoft Foundry.
      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image32.png)
 
-2.  Select **Foundry** from the left pane, and then select **Create** to create the Foundry resource.
+2.  Select **Foundry** from the left pane, and then select **+ Create** to create the Foundry resource.
 
      ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image33.png)
@@ -291,33 +291,30 @@ the items needed for this lakehouse tutorial, which includes lakehouse,
 dataflows, Data Factory pipelines, the notebooks, Power BI datasets, and
 reports.
 
-1.  Open your browser, navigate to the address bar, and type or paste
-    the following URL: https://app.fabric.microsoft.com/
-    then press the **Enter** button and sign in with your credentials
+1.  Open your browser, navigate to the address bar, and type or paste the following URL: https://app.fabric.microsoft.com/ then press the **Enter** button and sign in with your credentials
 
-| Field    | Value                                              |
-|----------|----------------------------------------------------|
-| Username | **<inject key="AzureAdUserEmail"></inject>**  |
-| Password | <inject key="AzureAdUserPassword"></inject>   |
+     | Field    | Value                                              |
+     |----------|----------------------------------------------------|
+     | Username | **<inject key="AzureAdUserEmail"></inject>**  |
+     | Password | <inject key="AzureAdUserPassword"></inject>   |
 
 2.  In the Workspaces pane, click on **+ New workspace** tile
 
      ![](./media/image43.png)
 
-3.  In the **Create a workspace** pane that appears on the right side,
-    enter the following details, and click on the **Apply** button.
+3.  In the **Create a workspace** pane that appears on the right side, enter the following details, and click on the **Apply** button.
 
-| Field     | Value                                                     |
-|-----------|-----------------------------------------------------------|
-| Name      | Fabric IQ Ontology |
-| Advanced  | Under License mode, select Fabric                         |
-| Default   | Small dataset storage format                              |
+     | Field     | Value                                                     |
+     |-----------|-----------------------------------------------------------|
+     | Name      | Fabric IQ Ontology |
+     | Advanced  | Under License mode, select Fabric                         |
+     | Default   | Small dataset storage format                              |
 
-![](./media/image44.png)
+     ![](./media/image44.png)
 
-![](./media/image45.png)
+     ![](./media/image45.png)
 
-![A screenshot of a computer AI-generated content may be
+     ![A screenshot of a computer AI-generated content may be
 incorrect.](./media/image46.png)
 
 ## Task 5: Create a lakehouse
@@ -336,11 +333,9 @@ incorrect.](./media/image46.png)
 
      ![](./media/image50.png)
 
-4.  You will see a notification stating **Successfully created SQL
-    endpoint**.
+4.  You will see a notification stating **Successfully created SQL endpoint**.
 
-> ![A screenshot of a computer AI-generated content may be
-> incorrect.](./media/image51.png)
+     ![A screenshot of a computer AI-generated content may be incorrect.](./media/image51.png)
 
 ## Task 6: Ingest sample data
 
@@ -352,8 +347,8 @@ incorrect.](./media/image46.png)
 
       ![](./media/image53.png)
 
-3.  Browse to **C:\LabFiles\LabFiles\Usecase 6\Fabric** on your VM, then
-    select  ** all** tables and click on **Open** button.
+3.  Browse to **C:\LabFiles\lab file\Usecase 4\Fabric** on your VM, then
+    select  **all** tables and click on **Open** button.
 
      ![](./media/image54.png)
 
@@ -396,6 +391,9 @@ incorrect.](./media/image46.png)
 
      ![](./media/image65.png)
 
+     > **Note:** If you encounter the “TooManyRequestsForCapacity” error while loading data, it indicates a capacity/rate limit issue rather than an SKU configuration issue. Wait for 20–25 minutes and retry loading the data. The operation should complete successfully once the capacity becomes available.
+
+
 10. From the left navigation bar, select **Fabric IQ Ontology**.
 
      ![](./media/image66.png)
@@ -406,12 +404,13 @@ incorrect.](./media/image46.png)
     select the **Ontology (preview)** item.
 
      ![](./media/image67.png)
+     > **Note:** In some cases, the “Ontology (preview)” item may not appear immediately in the “+ New item” search results. If this occurs, sign out of the Fabric portal, sign in again, and retry the search.
 
 2.  Enter **NetworkOperationsOntology** for the **Name** of your ontology and select **Create**.
 
      ![](./media/image68.png)
 
-    > **Tip:** Ontology names can include numbers, letters, and underscores. Don't use spaces or dashes.
+    > **Note:** Ontology names can include numbers, letters, and underscores. Don't use spaces or dashes.
 
 3.  The ontology opens when it's ready.
 
@@ -514,28 +513,28 @@ incorrect.](./media/image46.png)
     entity has a static data binding with the default columns from its
     source table.
 
-| Entity type name        | Source table in IQ_Lakehouse | Entity type key |
-|-------------------------|------------------------------|-----------------|
-| OrderItem               | OrderItems                   | OrderItemID     |
-| SupportTicket           | SupportTickets               | TicketID        |
-| RefundClaim             | RefundClaims                 | ClaimID         |
-| ShipmentTrackingEvent   | ShipmentTracking             | TrackingID      |
+     | Entity type name        | Source table in IQ_Lakehouse | Entity type key |
+     |-------------------------|------------------------------|-----------------|
+     | OrderItem               | OrderItems                   | OrderItemID     |
+     | SupportTicket           | SupportTickets               | TicketID        |
+     | RefundClaim             | RefundClaims                 | ClaimID         |
+     | ShipmentTrackingEvent   | ShipmentTracking             | TrackingID      |
 
- ![](./media/image88.png)
+     ![](./media/image88.png)
 
- ![](./media/image89.png)
+     ![](./media/image89.png)
 
- ![](./media/image90.png)
+     ![](./media/image90.png)
 
- ![](./media/image91.png)
+     ![](./media/image91.png)
 
- ![](./media/image92.png)
+     ![](./media/image92.png)
 
- ![](./media/image93.png)
+     ![](./media/image93.png)
 
- ![](./media/image94.png)
+     ![](./media/image94.png)
 
-![](./media/image95.png)
+     ![](./media/image95.png)
 
 ## Task 9: Create relationship types
 
@@ -569,53 +568,48 @@ contextual connections in your data.
 
         ![](./media/image99.png)
 
-Now the first relationship is created, and bound to data in your source
-table. Continue to the next section to create another relationship type.
+     Now the first relationship is created, and bound to data in your source
+     table. Continue to the next section to create another relationship type.
 
-**Products soldIn SaleEvent**
+     **Products soldIn SaleEvent**
 
-4.  Follow the same steps that you used for the first relationship type
-    to create the relationship type described in the following table.
+4.  Follow the same steps that you used for the first relationship type to create the relationship type described in the following table.
 
-| Relationship type name | Source data table                          | Source entity type        |
-|------------------------|--------------------------------------------|---------------------------|
-| Contains               | Tutorial workspace → Lakehouse → Order     | Products (OrderItem)      |
-| hasSupportTicket       | Order                                      | SupportTicket             |
-| hasTrackingEvent       | Order                                      | ShipmentTrackingEvent     |
-| mayLeadTo              | OrderItem                                  | RefundClaim               |
-| hasInventory           | OrderItem                                  | InventoryRecord           |
+     | Relationship type name | Source data table                          | Source entity type        |
+     |------------------------|--------------------------------------------|---------------------------|
+     | Contains               | Tutorial workspace → Lakehouse → Order     | Products (OrderItem)      |
+     | hasSupportTicket       | Order                                      | SupportTicket             |
+     | hasTrackingEvent       | Order                                      | ShipmentTrackingEvent     |
+     | mayLeadTo              | OrderItem                                  | RefundClaim               |
+     
 
- ![](./media/image100.png)
+     ![](./media/image100.png)
 
- ![](./media/image101.png)
+     ![](./media/image101.png)
 
- ![](./media/image102.png)
+     ![](./media/image102.png)
 
- ![](./media/image103.png)
+     ![](./media/image103.png)
 
- ![](./media/image104.png)
+     ![](./media/image104.png)
 
- ![](./media/image105.png)
+     ![](./media/image105.png)
 
- ![](./media/image106.png)
+     ![](./media/image107.png)
 
- ![](./media/image107.png)
+     ![](./media/image108.png)
 
- ![](./media/image108.png)
+     ![](./media/image109.png)
 
- ![](./media/image109.png)
+     ![](./media/image111.png)
 
- ![](./media/image110.png)
+     ![](./media/image112.png)
 
- ![](./media/image111.png)
+     ![](./media/image113.png)
 
- ![](./media/image112.png)
+     ![](./media/image114.png)
 
- ![](./media/image113.png)
-
- ![](./media/image114.png)
-
- ![](./media/image115.png)
+     ![](./media/image115.png)
 
 ## Task 10: Create data agent with ontology (preview) source
 
@@ -633,7 +627,7 @@ ontology (preview) item.
 
       ![](./media/image117.png)
 
-3.  Enter **+++**IQ_Agent**+++** as the Data agent name and
+3.  Enter **IQ_Agent** as the Data agent name and
     select **Create**.
 
      ![](./media/image118.png)
@@ -770,22 +764,26 @@ ontology (preview) item.
     ![](./media/image124.png)
 
 21. After publishing, verify the success message and select **View
-        publishing details** to review the agent deployment.
+publishing details** to review the agent deployment.
 
     ![](./media/image125.png)
 
-22. Copy the **Published URL** and paste it into Notepad for use in the
-        next task.
+22. Copy the **Published URL** and paste it into Notepad for use in the next task.
 
       ![](./media/image126.png)
 
-23. Save the **Workspace ID** and **AISkills ID** in **Notepad** for
-        later use.
+23. Save the **Workspace ID** and **AISkills ID(Artifact ID)** in **Notepad** for later use.
   
 
     ![](./media/image127.png)
 
     ![](./media/image128.png)
+
+    Add the following prompt in the IQ Agent:
+
+    ```
+    predict which products may run out of stock soon
+    ```
 
     ![](./media/image129.png)
 
@@ -877,10 +875,16 @@ ontology (preview) item.
 
 11. In the **Choose a knowledge type** window, select **Azure Blob Storage**, then click **Connect** to proceed.
 
+     ![](./media/UC2-T11-S11.1.png)
+
+     Click on the Azure AI Search resource dropdown and select the appropriate Azure AI Search resource. Then click on the Auth Type dropdown, select API Key, and click on Connect.
+
+     ![](./media/UC2-T11-S11.png)
+
      ![](./media/image141.png)
 
-12. In the **Choose a knowledge type** window, select Chat completions
-    model as gpt-4.1 and click on **create**
+12. In the Choose a knowledge type window, first select the **Storage account** and **Container name** that were created in the previous steps. Then select Chat completions model as gpt-4.1 and click on **Create**.
+
 
      ![](./media/image142.png)
 
@@ -897,6 +901,9 @@ ontology (preview) item.
     status is **Active**.
 
      ![](./media/image146.png)
+
+     > **Note:** If the status is not displayed as “Active”, refresh the page once and verify the status again.
+
 
 11. Select **Use in an agent**, then choose the created agent (for
     example, **IQAgent**) to associate the knowledge base with it
@@ -950,7 +957,7 @@ ontology (preview) item.
 
     - Review the latest Apex Legal email and tell me what happened.
 
-     ![](./media/image157.png)
+      ![](./media/image157.png)
 
 21. Select **Approve** to grant the required permissions and continue.
 
@@ -972,7 +979,7 @@ ontology (preview) item.
 25. A chat panel will open where you can enter your prompts. The agent
     will now respond
 
-    - Do we have enough stock to resolve this today?+++
+    - Do we have enough stock to resolve this today?
 
         ![](./media/image162.png)
 

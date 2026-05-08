@@ -60,41 +60,6 @@ understand context, and generate meaningful insights.
 - Clean up resources after completion to optimize cost and resource
   usage.
 
-## Task 0: Understand the VM and the credentials
-
-In this task, we will identify and understand the credentials that we
-will be using throughout the lab.
-
-1.  **Instructions** tab hold the lab guide with the instructions to be
-    followed throughout the lab.
-
-2.  **Resources** tab has got the credentials that will be needed for
-    executing the lab.
-
-    - **URL** – URL to the Azure portal
-
-    - **Subscription** – This is the ID of the subscription assigned to
-      you
-
-    - **Username** – The user id with which you need to login to the
-      Azure services.
-
-    - **Password** – Password to the Azure login. Let us call this
-      Username and password as Azure login credentials. We will use
-      these creds wherever we mention Azure login credentials.
-
-    - **Resource Group** – The **Resource group** assigned to you.
-
-      ![](./media/image1.png)
-
-3.  **Help** tab holds the Support information. The **ID** value here is
-    the **Lab instance ID** which will be used during the lab execution.
-
-      ![](./media/image2.png)
-
-\[!Alert\] **Important:** Make sure you create all your resources under
-this Resource group
-
 ## Task 1: Register Service provider
 
 1.  Open a browser and login to Azure portal at <https://portal.azure.com/> with your credentials.
@@ -119,7 +84,7 @@ incorrect.](./media/135.png)
 
 4.  Expand Settings from the left navigation menu. Click on **Resource
     providers**, enter **Microsoft.CognitiveServices** and
-    select i,t, and then click **Register**.
+    select it, and then click **Register**.
 
      ![](./media/image7.png)
 
@@ -153,12 +118,12 @@ incorrect.](./media/135.png)
 
      ![](./media/image15.png)
 
-4.  Wait for the Codespaces environment to setup .It takes few minutes
+5.  Wait for the Codespaces environment to setup .It takes few minutes
     to setup completely
 
     ![](./media/image16.png)
 
-5.  Run the following command to install the Azure Developer CLI
+6.  Run the following command to install the Azure Developer CLI
     (**azd**) on your codespace.
 
     ```
@@ -185,8 +150,9 @@ incorrect.](./media/135.png)
 
 3.  Sign in with your Azure credentials.
 
-    ![A screenshot of a computer AI-generated content may be
-incorrect.](./media/image20.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](./media/imaget3s3.png)
+
+
 
     ![A screenshot of a computer error AI-generated content may be
 incorrect.](./media/image21.png)
@@ -276,19 +242,19 @@ lowercase letters.
     provided URL and enter the displayed code to complete Azure login
     authentication.
 
-     ![](./media/image36.png)
-
-     ![](./media/image37.png)
-
 11. Select your subscription
 
-     ![](./media/image38.png)
 
 1. Now please change the terminal from bash to powershell.
 
      ![](./media/138.png)
 
+     >**Note:** If the “pwsh” (PowerShell) option is not visible in the terminal profile list, open the terminal and run the command **pwsh** manually to switch to the PowerShell environment.
+
 1. Then run the below command.
+    ```
+    cd Deployment
+    ```
 
      ```
      .\resourcedeployment.ps1
@@ -296,6 +262,12 @@ lowercase letters.
 
 12. After successfully logging in to Azure, review the deployed resource
     details and proceed with configuring the Kubernetes infrastructure.
+
+    ![](./media/image36.png)
+
+    ![](./media/image37.png)
+
+    ![](./media/image38.png)
 
      ![](./media/image39.png)
 
@@ -397,8 +369,8 @@ incorrect.](./media/139.png)
 
     ![](./media/image57.png)
 
-4.  Browse to **C:\LabFiles\LabFiles\Data** on your VM, then select 
-    ** all files** and click on **Open** button.
+4.  Browse to **C:\LabFiles\lab file\Data** on your VM, then select 
+    **all files** and click on **Open** button.
 
      ![](./media/image58.png)
 
@@ -411,8 +383,8 @@ incorrect.](./media/139.png)
 
      ![](./media/image61.png)
 
-6.  Enter +++ **What are the main factors contributing to the current
-    housing affordability issues?**+++ and select **Send**.
+6.  Enter **What are the main factors contributing to the current
+    housing affordability issues?** and select **Send**.
 
      ![](./media/image62.png)
 
@@ -434,10 +406,9 @@ incorrect.](./media/139.png)
 3.  Enter  **Analyze the two annual reports and compare the positive
     and negative outcomes YoY. Show the results in a table.** and
     select **Send**.
+    ![](./media/image66.png)
 
-     ![](./media/image66.png)
-
-     ![](./media/image67.png)
+    ![](./media/image67.png)
 
 4.  Click **DETAILS** on **Annual Housing Report 2023**
 
@@ -459,7 +430,7 @@ incorrect.](./media/139.png)
 
 5.  Review the summarized comparison.
 
-     ![](./media/image73.png).
+     ![](./media/image73.png)
 6.  Close the pop-up viewer
 
 ## Task 7: Contracts Search & Analysis
