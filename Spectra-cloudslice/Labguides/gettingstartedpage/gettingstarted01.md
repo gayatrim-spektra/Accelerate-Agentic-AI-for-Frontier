@@ -50,91 +50,75 @@ Participants should have:
 
 The architecture for this lab involves the following key components:
 
-1. Azure AI Search
-Azure AI Search is used to index enterprise documents and enable fast, semantic retrieval.
+1. **Azure AI Search:** A cloud-based search service that enables intelligent search experiences over structured and unstructured data.
 
-   - Serves as the search layer for the HR knowledge assistant.
-   - Supports vector-based search over enterprise documents.
+   - Supports semantic and vector-based search capabilities.
+   - Enables fast retrieval of indexed enterprise data.
 
-1. Azure OpenAI Service
-Azure OpenAI Service provides the language and embedding models used in the lab.
+1. **Azure OpenAI Service:** Provides access to advanced AI models for natural language processing and generative AI capabilities.
 
-   - Supports document embedding and semantic retrieval.
-   - Enables natural language reasoning and AI-generated responses.
+   - Supports text generation, embeddings, and reasoning tasks.
+   - Enables AI-powered conversational and analytical solutions.
 
-1. Microsoft Copilot Studio
-Microsoft Copilot Studio is used to create the HR knowledge assistant.
+1. **Microsoft Copilot Studio:** A low-code platform used to create and manage AI-powered copilots and virtual assistants.
 
-   - Allows the assistant to be built and tested.
-   - Connects Azure AI Search as a knowledge source.
+   - Supports conversational AI development.
+   - Enables integration with enterprise data sources and services.
 
-1. Azure Storage Account
-Azure Storage Account stores the source documents used in the lab.
+1. **Azure Storage Account:** A scalable cloud storage service used to securely store different types of data.
 
-   - Stores HR policy and enterprise documents.
-   - Supports ingestion and indexing workflows.
+   - Supports blob, file, queue, and table storage services.
+   - Provides durable and highly available data storage.
 
-1. Azure Container Apps
-Azure Container Apps hosts the containerized agent services.
+1. **Azure Container Apps:** A managed service for running containerized applications and microservices.
 
-   - Provides a managed environment for agent deployment.
-   - Supports scalable execution of AI workflows.
+   - Supports scalable container deployment.
+   - Simplifies container orchestration and management.
 
-1. Azure Container Registry
-Azure Container Registry stores the container images used by the solution.
+1. **Azure Container Registry:** A private container registry service for storing and managing container images.
 
-   - Maintains deployment artifacts for backend services.
-   - Supports containerized application deployment.
+   - Enables secure storage of container
+   - Supports container-based application deployment workflows.
 
-1. Azure Cosmos DB
-Azure Cosmos DB provides scalable NoSQL storage for workflow data.
+1. **Azure Cosmos DB:** A globally distributed NoSQL database service designed for high scalability and low latency.
+ 
+   - Supports multiple data models and APIs.
+   - Provides high availability and elastic scalability.
 
-   - Stores application state and workflow context.
-   - Supports coordination between multiple AI agents.
+1. **Azure App Service:** A fully managed platform for hosting web applications, APIs, and backend services.
 
-1. Azure App Service
-Azure App Service hosts the frontend web application.
+   - Supports scalable application hosting.
+   - Enables secure and efficient web application deployment.
 
-   - Provides the user-facing interface for enterprise workflows.
-   - Supports authentication and application access.
+1. **GitHub Codespaces:** A cloud-based development environment integrated with GitHub repositories.
 
-1. GitHub Codespaces
-GitHub Codespaces provides the cloud-based development environment used in the lab.
+   - Provides ready-to-use development workspaces.
+   - Supports collaborative and remote development workflows.
 
-   - Used to execute deployment and provisioning commands.
-   - Simplifies setup with a ready-to-use workspace.
+1. **Microsoft Foundry:** A platform used for managing AI models, deployments, and related AI resources.
 
-1. Microsoft Foundry
-Microsoft Foundry is used to deploy and manage AI models and related assets.
+   - Supports AI model deployment and monitoring.
+   - Provides centralized access to AI assets and services.
 
-   - Supports model deployment and verification.
-   - Provides access to deployed AI endpoints and resources.
+1. **Multi-Agent Framework:** A framework that enables multiple AI agents to collaborate and coordinate tasks within intelligent systems.
 
-1. Multi-Agent Framework
-The multi-agent framework enables specialized AI agents to collaborate on business workflows.
+   - Supports distributed task execution and decision-making.
+   - Enables automation across complex workflows and processes.
 
-   - Supports planning, retrieval, validation, and execution tasks.
-   - Enables automation across enterprise scenarios.
+1. **Vector Index:** A data structure used to store and retrieve vector embeddings for similarity-based search operations.
 
-1. Vector Index
-The vector index stores embeddings generated from enterprise documents.
+   - Supports semantic and nearest-neighbor search.
+   - Improves retrieval accuracy for AI-powered applications.
 
-   - Enables semantic and similarity-based retrieval.
-   - Forms the foundation for RAG-based search behavior.
+## Virtual Machine & Lab Guide
 
-## Getting Started with the lab
-
-Welcome to your Accelerate Agentic AI for Frontier Workshop, Let's begin by making the most of this experience.
+Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
 
 ## Accessing Your Lab Environment
 
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
 ![Access Your VM and Lab Guide](media/gs0.png)
-
-## Virtual Machine & Lab Guide
-
-Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
 
 ## Lab Guide Zoom In/Zoom Out
 
