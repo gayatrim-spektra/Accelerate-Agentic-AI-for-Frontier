@@ -52,12 +52,6 @@ The main objectives of this use case are:
 
   - Generate professional responses
 
-## Generate Email samples
-
-- Send email samples ( **C:\LabFiles\LabFiles\Usecase 6\\** WorkIQ
-  Labfiles) from mail id of your choice to your tenant id.
-
-    ![](./media/image1.png)
 
 ## Task 1: Create an Azure AI Search resource
 
@@ -479,7 +473,7 @@ incorrect.](./media/image46.png)
 
      ![](./media/image80.png)
 
-12. Switch to the **Bindings** tab → **Add data to entity type**. 
+12. Switch to the **Bindings** tab, then click on **Add data to entity type**. 
 
      ![](./media/image81.png)
 
@@ -585,13 +579,18 @@ contextual connections in your data.
 
      ![](./media/image100.png)
 
+     Choose the relationship type name as **Contains**, Source entity type as **Order** and Target entity type as **OrderItem**,then click on **Add relationship type**
      ![](./media/image101.png)
 
+     Select the Workspace as **Fabric IQ Ontology**, Lakehouse as **IQ_Lakehouse**, Table as **Orders**, Source Column as **OrderID**, then click on **Apply**
      ![](./media/image102.png)
+
 
      ![](./media/image103.png)
 
      ![](./media/image104.png)
+
+     Choose the relationship type name as **hasSupportTicket**,Select the Workspace as **Fabric IQ Ontology**, Lakehouse as **IQ_Lakehouse**, Table as **Orders**, Source Column as **OrderID**, then click on **Apply**
 
      ![](./media/image105.png)
 
@@ -599,13 +598,19 @@ contextual connections in your data.
 
      ![](./media/image108.png)
 
+     Choose the relationship type name as **hasTrackingEvent**, Select the Workspace as **Fabric IQ Ontology**, Lakehouse as **IQ_Lakehouse**, Table as **Orders**, Source Column as **OrderID**, then click on **Create**
+
      ![](./media/image109.png)
 
      ![](./media/image111.png)
 
      ![](./media/image112.png)
 
+     Choose the relationship type name as **mayLeadTo**, Source entity type as **OrderItem** and Target entity type as **RefundClaim**,then click on **Add relationship type**
+
      ![](./media/image113.png)
+
+     Select the Workspace as **Fabric IQ Ontology**, Lakehouse as **IQ_Lakehouse**, Table as **orderitems**, Source Column as **OrderItemID** and another Source Column as **UnitPrice**, then click on **Create**
 
      ![](./media/image114.png)
 
@@ -877,7 +882,7 @@ publishing details** to review the agent deployment.
 
      ![](./media/UC2-T11-S11.1.png)
 
-     Click on the Azure AI Search resource dropdown and select the appropriate Azure AI Search resource. Then click on the Auth Type dropdown, select API Key, and click on Connect.
+12. Click on the Azure AI Search resource dropdown and select the appropriate Azure AI Search resource. Then click on the Auth Type dropdown, select **API Key**, and click on **Connect**.
 
      ![](./media/UC2-T11-S11.png)
 

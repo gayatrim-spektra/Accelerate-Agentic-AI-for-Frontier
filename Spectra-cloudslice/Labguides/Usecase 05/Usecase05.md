@@ -249,8 +249,6 @@ lowercase letters.
 
      ![](./media/138.png)
 
-     >**Note:** If the “pwsh” (PowerShell) option is not visible in the terminal profile list, open the terminal and run the command **pwsh** manually to switch to the PowerShell environment.
-
 1. Then run the below command.
     ```
     cd Deployment
@@ -369,10 +367,11 @@ incorrect.](./media/139.png)
 
     ![](./media/image57.png)
 
-4.  Browse to **C:\LabFiles\lab file\Data** on your VM, then select 
-    **all files** and click on **Open** button.
+4.  Browse to **C:\LabFiles\lab file\Data** on your VM, then upload all the files by selecting and uploading **one file** at a time, and click on the **Open** button after each upload.
 
      ![](./media/image58.png)
+
+
 
 5.  Uploading the documents may take approximately 10–13 minutes to
     complete.
