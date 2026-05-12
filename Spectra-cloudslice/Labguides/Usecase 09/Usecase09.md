@@ -305,6 +305,8 @@ incorrect.](../Usecase%2008/media/image24new.png)
 1. Run this script from root of repo - it will create .env with values extracted by Azure CLI. By default it looks for an **rg-Ignite-XXX** resource group but you can override it.
 
     ```
+    cd ../..
+    
     ./scripts/1-update-env-selfguided.sh
     ```
 
@@ -713,7 +715,7 @@ home improvement products to Zava customers. This notebook helps you assess resp
 
     ![](./media/image156.png)
 
-1. Run the cell to create a DefaultAzureCredential object that will be used to authenticate all subsequent SDK calls against Azure services.
+1. Run the cell to create a **DefaultAzureCredential** object that will be used to authenticate all subsequent SDK calls against Azure services.
 
     ![](./media/image157.png)
 
@@ -721,67 +723,67 @@ home improvement products to Zava customers. This notebook helps you assess resp
 
     ![](./media/image158.png)
 
-1. Run the cell to load environment variables from the .env file and create an AzureOpenAIModelConfiguration object that points to the judge model used by all AI-assisted evaluators.
+1. Run the cell to **load environment variables** from the .env file and create an AzureOpenAIModelConfiguration object that points to the judge model used by all AI-assisted evaluators.
 
     ![](./media/image159.png)
 
-1. Coherence: Run the cell to instantiate the CoherenceEvaluator and score a sample Cora response on how logically connected and easy to follow it reads (scale 1–5).
+1. Coherence: Run the cell to instantiate the **CoherenceEvaluator** and score a sample Cora response on how logically connected and easy to follow it reads (scale 1–5).
 
     ![](./media/image160.png)
 
-1. Fluency: Run the cell to instantiate the FluencyEvaluator and score a sample Cora response on grammatical accuracy, vocabulary range, and overall readability (scale 1–5).
+1. Fluency: Run the cell to instantiate the **FluencyEvaluator** and score a sample Cora response on grammatical accuracy, vocabulary range, and overall readability (scale 1–5).
 
     ![](./media/image161.png)
 
-1. Composite QA: Run the cell to instantiate the QAEvaluator and score a single Cora response across six quality dimensions — Relevance, Groundedness, Fluency, Coherence, Similarity, and F1 — in one call.
+1. Composite QA: Run the cell to instantiate the **QAEvaluator** and score a single Cora response across six quality dimensions — Relevance, Groundedness, Fluency, Coherence, Similarity, and F1 — in one call.
 
     ![](./media/image162.png)
 
-1. Retrieval: Run the cell to instantiate the RetrievalEvaluator and score how well the retrieved context chunks address the query and rank the most relevant chunks at the top.
+1. Retrieval: Run the cell to instantiate the **RetrievalEvaluator** and score how well the retrieved context chunks address the query and rank the most relevant chunks at the top.
 
     ![](./media/image163.png)
 
-1. Groundedness: Run the cell to instantiate the GroundednessEvaluator and verify that Cora's response stays within the bounds of the provided product context without fabricating information.
+1. Groundedness: Run the cell to instantiate the **GroundednessEvaluator** and verify that Cora's response stays within the bounds of the provided product context without fabricating information.
 
     ![](./media/image164.png)
 
-1. Coherence (pprint): Run the cell to run the CoherenceEvaluator on a screwdriver-related query and display the full structured result dictionary including score, reasoning, and pass/fail threshold.
+1. Coherence (pprint): Run the cell to run the **CoherenceEvaluator** on a screwdriver-related query and display the full structured result dictionary including score, reasoning, and pass/fail threshold.
 
     ![](./media/image166.png)
 
-1. Response Completeness: Run the cell to instantiate the ResponseCompletenessEvaluator and measure how much of the expected ground truth information is covered in Cora's response.
+1. Response Completeness: Run the cell to instantiate the **ResponseCompletenessEvaluator** and measure how much of the expected ground truth information is covered in Cora's response.
 
     ![](./media/image167.png)
 
-1. Similarity: Run the cell to instantiate the SimilarityEvaluator and score the semantic closeness between Cora's response and the ground truth using an LLM-as-judge approach (scale 1–5).
+1. Similarity: Run the cell to instantiate the **SimilarityEvaluator** and score the semantic closeness between Cora's response and the ground truth using an LLM-as-judge approach (scale 1–5).
 
     ![](./media/image168.png)
 
-1. F1 Score: Run the cell to instantiate the F1ScoreEvaluator and measure the token-overlap precision and recall between Cora's response and the ground truth as a 0–1 score.
+1. F1 Score: Run the cell to instantiate the **F1ScoreEvaluator** and measure the token-overlap precision and recall between Cora's response and the ground truth as a 0–1 score.
 
     ![](./media/image169.png)
 
-1. BLEU Score: Run the cell to instantiate the BleuScoreEvaluator and score the n-gram overlap between Cora's response and the ground truth using the standard BLEU metric.
+1. BLEU Score: Run the cell to instantiate the **BleuScoreEvaluator** and score the n-gram overlap between Cora's response and the ground truth using the standard BLEU metric.
 
     ![](./media/image170.png)
 
-1. GLEU Score: Run the cell to instantiate the GleuScoreEvaluator and compute the Google-BLEU score, which improves on BLEU by applying a per-sentence reward objective for both precision and recall.
+1. GLEU Score: Run the cell to instantiate the **GleuScoreEvaluator** and compute the Google-BLEU score, which improves on BLEU by applying a per-sentence reward objective for both precision and recall.
 
     ![](./media/image171.png)
 
-1. ROUGE Score: Run the cell to instantiate the RougeScoreEvaluator and measure recall-oriented n-gram overlap between the response and ground truth using ROUGE-L, returning precision, recall, and F1 scores.
+1. ROUGE Score: Run the cell to instantiate the **RougeScoreEvaluator** and measure recall-oriented n-gram overlap between the response and ground truth using ROUGE-L, returning precision, recall, and F1 scores.
 
     ![](./media/image172.png)
 
-1. METEOR Score: Run the cell to instantiate the MeteorScoreEvaluator and score response similarity against the ground truth while accounting for synonyms, stemming, and paraphrasing beyond simple token overlap.
+1. METEOR Score: Run the cell to instantiate the **MeteorScoreEvaluator** and score response similarity against the ground truth while accounting for synonyms, stemming, and paraphrasing beyond simple token overlap.
 
     ![](./media/image173.png)
 
-1. Custom Evaluators: Run the cell to define and test two custom evaluators — a function-based response_length evaluator that counts characters, and a class-based BlocklistEvaluator that flags responses containing restricted words.
+1. Custom Evaluators: Run the cell to define and test two **custom evaluators** — a function-based response_length evaluator that counts characters, and a class-based BlocklistEvaluator that flags responses containing restricted words.
 
     ![](./media/image174.png)
 
-1. Run All Evaluators: Run the cell to execute a full multi-evaluator run using evaluate() against the 42-evaluate-quality.jsonl dataset, scoring every row across Content Safety, Coherence, Relevance, Groundedness, Fluency, and Similarity, then publishing results to both the Azure AI Foundry portal and a local JSON file.
+1. Run All Evaluators: Run the cell to execute a full **multi-evaluator run** using evaluate() against the 42-evaluate-quality.jsonl dataset, scoring every row across Content Safety, Coherence, Relevance, Groundedness, Fluency, and Similarity, then publishing results to both the Azure AI Foundry portal and a local JSON file.
 
     ![](./media/image175.png)
 
@@ -791,8 +793,7 @@ home improvement products to Zava customers. This notebook helps you assess resp
 
 ## Task 12: Cora-For-Zava: Exploring AI Safety Evaluators for Secure Responses
 
-**Cora** is a customer service chatbot for **Zava** - a fictitious retailer of home improvement goods for DIY enthusiasts. Before deploying Cora to serve Zava customers, you must ensure it generates safe,
-appropriate content and is protected against adversarial attacks. This notebook guides you through Azure AI Foundry's safety evaluators, helping you identify and mitigate risks like harmful content, jailbreak attempts, and protected material violations to maintain a secure and trustworthy customer experience.
+**Cora** is a customer service chatbot for **Zava** - a fictitious retailer of home improvement goods for DIY enthusiasts. Before deploying Cora to serve Zava customers, you must ensure it generates safe, appropriate content and is protected against adversarial attacks. This notebook guides you through Azure AI Foundry's safety evaluators, helping you identify and mitigate risks like harmful content, jailbreak attempts, and protected material violations to maintain a secure and trustworthy customer experience.
 
 1. Navigate to the **labs/** **4-evaluation/** folder and open the **43-evaluate-safety.ipynb** notebook to begin the environment setup lab.
 
