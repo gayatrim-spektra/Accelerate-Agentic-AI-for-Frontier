@@ -44,55 +44,25 @@ Participants should have:
 
 ## Explanation of Components
 
-The architecture for this lab involves the following key components:
+1. **Azure AI Foundry**: A unified platform for building, managing, and evaluating AI applications and agents on Azure. It provides tools for orchestration, model integration, monitoring, and governance across the AI lifecycle.
 
-1. **Azure AI Foundry**: The unified platform for building, deploying, and governing AI agents.
+1. **Azure AI Agent Service**: A managed Azure service for creating AI-powered agents that can reason, use tools, retrieve data, and automate workflows. It simplifies deploying enterprise-grade conversational and autonomous AI experiences.
 
-   - Hosts the AI project, model deployments, and agent configurations.
-   - Provides the control plane for centralized governance and management.
-   - Integrates evaluation, tracing, and red teaming within a single environment.
+1. **Azure AI Search**: A cloud-based search and retrieval service that enables indexing, semantic search, vector search, and retrieval-augmented generation (RAG) for AI applications. It helps applications quickly find and rank relevant information from large datasets.
 
-1. **Azure AI Agent Service**: The runtime for creating and executing intelligent agents.
+1. **Azure OpenAI Service**: A Microsoft Azure service that provides secure access to advanced OpenAI models such as GPT and embedding models. It enables organizations to build generative AI solutions with enterprise security, compliance, and scalability.
 
-   - Powers the Cora retail assistant with tool-calling and memory capabilities.
-   - Supports multi-agent orchestration through the Agent Framework.
-   - Connects agents to external data sources via function tools and Azure AI Search.
+1. **Azure AI Evaluation SDK**: A software development kit used to assess the quality, safety, relevance, and performance of AI applications and models. It helps developers benchmark outputs and automate evaluation workflows.
 
-1. **Azure AI Search**: The retrieval backbone for grounding agent responses.
+1. **Azure Application Insights**: An application performance monitoring service that collects telemetry, logs, traces, and diagnostics from applications. It helps developers monitor reliability, performance, and user interactions in real time.
 
-   - Indexes Zava's product catalog and support documents.
-   - Performs hybrid search (keyword + vector) to surface relevant content.
-   - Ensures agent responses are grounded in verified enterprise data.
+1. **Azure AI Tracing (OpenTelemetry)**: A tracing and observability capability that uses OpenTelemetry standards to capture AI workflow execution details, requests, and dependencies. It helps diagnose issues and analyze end-to-end AI application behavior.
 
-1. **Azure OpenAI Service**: Provides the large language models that power the agents.
+1. **Microsoft Foundry AI Red Teaming**: A security testing approach within Microsoft AI ecosystems used to evaluate AI systems for vulnerabilities, harmful outputs, safety risks, and policy violations. It helps improve the robustness and trustworthiness of generative AI applications.
+  
+## Virtual Machine & Lab Guide
 
-   - Handles natural language understanding, reasoning, and response generation.
-   - Used as the judge model in AI-assisted quality evaluations.
-   - Drives red teaming simulations to probe agent vulnerabilities.
-
-1. **Azure AI Evaluation SDK**: The framework for measuring agent quality and safety.
-
-   - Runs quality evaluators (relevance, coherence, groundedness, fluency) using LLM-as-judge.
-   - Runs safety evaluators (violence, hate, self-harm, sexual, protected material) via the RAI service.
-   - Produces scored results and defect rates for systematic analysis.
-
-1. **Azure Application Insights**: The observability backend for monitoring agent behavior.
-
-   - Collects distributed traces from agent sessions and tool calls.
-   - Stores span data for analysis, debugging, and performance monitoring.
-   - Enables continuous monitoring of live agent deployments.
-
-1. **Azure AI Tracing (OpenTelemetry)**: The instrumentation layer for capturing agent execution.
-
-   - Records span snapshots for each step in an agent's reasoning chain.
-   - Compatible with OpenAI SDK, LangChain, and custom agent frameworks.
-   - Feeds trace data into Application Insights for end-to-end visibility.
-
-1. **Microsoft Foundry AI Red Teaming**: The adversarial testing capability for hardening agents.
-
-   - Simulates prompt injection, jailbreak, and harmful content attacks.
-   - Identifies safety gaps and unintended behaviors before production deployment.
-   - Produces a structured risk report to guide mitigation actions.
+Your virtual machine is your workhorse throughout the workshop. The guide is your roadmap to success.
 
 ## Getting Started with the lab
 
@@ -105,10 +75,6 @@ Once you're ready to dive in, your virtual machine and **Guide** will be right a
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
 ![](./media/gs1.png)
-
-## Virtual Machine & Lab Guide
-
-Your virtual machine is your workhorse throughout the workshop. The guide is your roadmap to success.
 
 ## Exploring Your Lab Resources
 
