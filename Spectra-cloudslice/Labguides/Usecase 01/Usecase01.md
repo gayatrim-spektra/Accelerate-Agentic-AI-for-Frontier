@@ -68,11 +68,7 @@ incorrect.](./media/uc1-5.png)
 
 1. In the AI Search service, navigate to **Settings**, select **Keys**, and under **Manage admin keys**, click the **copy icon** next to the **Primary admin key** to copy it for later use.
 
-    ![image](./media/uc1-6.png)
-
 1. In the AI Search service, go to **Identity**, switch the **Status** to **On** to enable the system-assigned managed identity, and then click **Save** to apply the changes.
-
-    ![image](./media/uc1-7.png)
 
 1. In the confirmation dialog to enable the system-assigned managed identity, click **Yes** to proceed and register the identity with Microsoft Entra ID.
 
@@ -120,11 +116,9 @@ incorrect.](./media/uc1-5.png)
 
     ![image](./media/uc1-16.png)
 
-1. In the **document** container, click **Upload (1)**, then in the upload pane select **Browse for files (2)**, choose the file you want to upload, and proceed with the upload.
+1. In the **document** container, click **Upload (1)**, then in the upload pane select **Browse for files (2)**, navigate to **C:\LabFiles\lab file**, select the **LeavePolicy.docx**  and then click on **Upload**..
 
     ![image](./media/uc1-17.png)
-
-1. Select the **LeavePolicy.docx** from **C:\LabFiles\lab file** and then click on **Upload**.
 
 1. In the storage account, navigate to **Access Control (IAM) (1)**, click **+ Add (2)**, and select **Add role assignment (3)** to begin assigning permissions.
 
@@ -141,10 +135,6 @@ incorrect.](./media/uc1-5.png)
 1. In the **Members** tab, select **Managed identity (1)**, click **Select members(2)**, choose **Search service (3)** from the managed identity dropdown, select your **AI Search service instance (4)**, and proceed to assign it.
 
     ![image](./media/uc1-22.png)
-
-1. In the **Select managed identities** pane, choose the **Search service** managed identity, select your AI Search service instance, and click **Select** to add it.
-
-    ![image](./media/uc1-23.png)
 
 1. In the **Add role assignment** pane, verify that both the required user and the **Search service managed identity** are listed under **Members (1)**, then click **Review + assign (2)** twice to complete the role assignment.
 
@@ -191,29 +181,18 @@ document and required Role permissions to it.
 
     ![image](./media/uc1-33.png)
 
-1. In the **Select managed identities** pane, confirm the selected **Search service** managed identity and click **Select** to add it.
-
-    ![image](./media/uc1-34.png)
-
 1. In the **Add role assignment** pane, verify that both the required user and the **Search service managed identity** are listed under **Members (1)**, then click **Review + assign (2)** twice to complete the role assignment.
 
     ![image](./media/uc1-35.png)
 
-1. On the Azure OpenAI resource **Overview** page, click **Go to Foundry portal** to open the service in Microsoft Foundry.
+1. Navigate to the **Overview** page, click **Go to Foundry portal** to open the service in Microsoft Foundry.
 
     ![image](./media/uc1-36.png)
 
-1. In the **Microsoft Foundry** portal, navigate to **Deployments (1)**, click **+ Deploy model (2)**, and select **Deploy base model (3)** to start deploying a model.
 
-    ![image](./media/uc1-37.png)
+1. Search for **text-embedding-3-large (1)**, select the model from the **list (2)**, and click **Confirm (3)** to proceed.
 
-1. In the **Select a model** pane, search for **text-embedding-3-large (1)**, select the model from the **list (2)**, and click **Confirm (3)** to proceed.
-
-    ![image](./media/uc1-38.png)
-
-1. In the **Deploy text-embedding-3-large** pane, keep the **Deployment type** as **Standard (1)** and click **Deploy (2)** to create the model deployment.
-
-    ![image](./media/uc1-39.png)       
+1. In the **Deploy text-embedding-3-large** pane, keep the **Deployment type** as **Standard (1)** and click **Deploy (2)** to create the model deployment.      
 
    ### Congratulations!
 
