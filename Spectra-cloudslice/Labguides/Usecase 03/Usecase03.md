@@ -284,7 +284,7 @@ incorrect.](./media/image45.png)
 
     ![](./media/f10.png)
 
-1. Click on Deployments from the left navigation menu to see the **models** that have been deployed.
+1. Click on **Deployments (1)** from the left navigation menu to see the **models (2)** that have been deployed.
 
     ![](./media/f11.png)
 
