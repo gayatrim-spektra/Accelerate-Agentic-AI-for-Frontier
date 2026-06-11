@@ -282,7 +282,11 @@ incorrect.](./media/image45.png)
 
 1. Click on **Build** from the top menu.
 
+    ![](./media/f10.png)
+
 1. Click on Deployments from the left navigation menu to see the **models** that have been deployed.
+
+    ![](./media/f11.png)
 
    ### Congratulations!
 
